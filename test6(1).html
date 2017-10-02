@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test 6</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var ask =prompt("enter 1 for addition or 2 for multiplication");
+var n=prompt("enter any natural number(for multiplication LIMIT is 21)");
+
+var i=0;
+var sum=0;
+var mul=1;
+
+function addition(){
+for(i=1; i <= n; i++)
+    {
+       sum = sum+i;
+       console.log(sum);
+    }
+    document.write("the summation of numbers upto " +n+ " is :"+sum);
+};
+
+function multiplication(){
+for(i=1; i <= n; i++)
+    {
+       mul = mul*i;
+       console.log(mul);
+    }
+    document.write("the multiplication of numbers upto " +n+ " is :"+mul);
+};
+
+if (ask==1) {
+	addition();
+}
+else if(ask==2){
+	multiplication();
+}
+</script>
+</body>
+</html>
